@@ -1,0 +1,306 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    background: rgb(120, 186, 230);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    }
+
+/* Barre de statut en haut */
+.status-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #1e293b;
+    color: white;
+    padding: 0.5rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 0.875rem;
+    z-index: 100;
+    }
+
+.status-bar-left {
+    font-weight: 500;
+    }
+
+.status-bar-right {
+    display: flex;
+    gap: 0.25rem;
+    font-size: 1rem;
+    }
+
+.status-bar-center {
+    display: flex;
+    font-size: 2rem;
+    font-weight: 500;
+    gap: 2rem;
+    }
+
+/* Conteneur principal */
+.container {
+    width: 100%;
+    max-width: 28rem;
+    margin-top: 5rem;
+    width: calc(33.33% - 10px); /*  images moins l'espace */
+    object-fit: cover; /* Évite la déformation */
+    
+    
+    }
+
+.chaine{
+    width: 80px;
+    background-color: rgba(28, 30, 43, 0.8);
+    fill-opacity: 0.8;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0;
+    border-right: 1px solid rgba(255, 255, 255, 0.1);
+    align-items: center;
+    justify-content: flex-start;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    }
+
+#chaine {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    gap: 70px;
+        }
+
+.telegram {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    }
+
+.icone-telegram {
+    font-size: 20px;
+    margin-bottom: 30px;
+    color: #fff;
+    transition: transform 0.3s ease, color 0.3s ease;
+    } 
+
+main {
+    margin-left: 0;
+    width: calc(100% - 150px);
+    position: relative;
+    }
+        
+/* Carte blanche */
+.card {
+    background-color: #fcf2f2 ;
+    border-radius: 1.5rem;
+    padding: 2rem;
+    box-shadow: 0 30px 45px -1px rgba(8, 55, 34, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:1rem
+    }
+
+.aviator{
+    width: 100%;
+    margin-top:80px ;
+
+    
+    }
+/* Logo Aviator */
+.logo-container {
+    width: 8rem;
+    height: 8rem;
+    background: linear-gradient(135deg, #0dde64 30%, #203a2b 70%);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 35px 35px -1 rgba(10, 211, 114, 0.2);
+    
+    }
+
+.logo-content {
+    text-align: center;
+    margin:80px;
+    }
+
+.logo-icon {
+    font-size: 3.5rem;
+    margin-bottom: 0.25rem;
+    padding-top: 10px;
+    animation: animation 2s ease-in-out infinite;
+    }
+@keyframes animation {
+        0% {
+        transform: translateY(0);
+        }
+        50% {
+        transform: translateY(-10px);
+        }
+        100% {
+        transform: translateY(0);
+        }
+    }
+
+.logo-text {
+    font-size: 1.5rem;
+    font-weight: 900;
+    padding-bottom: 20px ;
+     color: #7ef0bb;
+            
+    }
+p {
+    margin: 0;
+    box-shadow: 2px 2px 5px 0 rgba(22, 209, 25, 0.3);
+    }
+
+/* Titre avec emojis */
+.title-container {
+    text-align: center;
+    padding-left: 50px;
+    }
+
+.title {
+    font-size: 3rem;
+    font-weight: 900;
+    color: #059669;
+    margin-bottom: 0.5rem;
+    }
+
+.emojis {
+    font-size: 1.75rem;
+    margin-left: 0.25rem;
+    }
+
+/* Description */
+.description {
+    text-align: center;
+    color: #050606;
+    font-size: 0.975rem;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    }
+
+/* Bouton Follow Now */
+.follow-button {
+    background-color: #059669;
+    color: rgb(254, 252, 252);
+    border: none;
+    padding: 0.75rem 2rem;
+    border-radius: 9999px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: all 1s ease;
+    box-shadow: 0 10px 15px -3px rgba(16, 185, 129, 0.3);
+    }
+
+.follow-button:hover {
+    background-color: #b9cbc6;
+    color: #050606;
+    box-shadow: 0 15px 20px -3px rgba(16, 185, 129, 0.4);
+    transform: translateY(-2px);
+    }
+
+.follow-button:active {
+    background-color: #047857;
+    transform: translateY(0);
+    }
+
+.button-icon {
+    font-size: 1.25rem;
+    }
+
+.button-text {
+    font-size: 1.25rem;
+    }
+a {
+    text-decoration: none;
+    color: inherit;
+    }
+.rejoindre {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    }
+
+.chaine-content {
+    margin-top: 10px;
+    color: rgb(14, 11, 11);
+    padding: 0.75rem rem;
+    display: flex;
+    flex-direction: column;
+    }
+
+.chaine-icon {
+    font-size: 2rem;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin-left: 20px;
+    }
+@media (max-width:960px) {
+    .chaine-icon {
+        font-size: 1rem;
+        font-weight: 700;
+        align-items: center;
+        gap: 2rem;
+        margin-bottom: 200px ;
+        margin-left: 20px;
+    }
+}
+     
+.icon {
+    font-size: 5rem;
+    animation: animation 3s ease-in-out infinite;
+    }
+#foot{
+    display: flex;
+    flex-wrap: wrap; /* Permet le retour à la ligne */
+    gap: 10px; /* Espace entre les images */
+    margin-top: 40px
+
+}
+
+#icon-home {
+    margin-bottom: 110rem;
+    position: fixed;
+    left:80px;
+    top: 100px;
+    animation: animation 3s ease-in-out infinite;
+}
+#icon-anime{
+    margin-top: 30rem;
+    animation: animation 3s ease-in-out infinite;
+ }
+#icon-foot {
+    margin-bottom: 50rem;
+    animation: animation 3s ease-in-out infinite;
+}      
+.titre{
+    font-size: 2rem;
+    font-weight: 900;
+    color: #070707;
+    margin-top: 50px;
+    margin-bottom: 0.5rem;
+     text-align: center;
+}
+.aviator{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
